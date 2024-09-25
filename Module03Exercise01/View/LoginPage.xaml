@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Exercise01.View.LoginPage"
+             Title="Login"
+             BackgroundColor="#F5F5F5">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="15"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+        
+        <!-- Title -->
+        <Label Text="Login"
+               FontSize="32"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="#512BD4"
+               FontAttributes="Bold" />
+        
+        <!-- Username Entry -->
+        <Entry Placeholder="Username"
+               PlaceholderColor="#888"
+               TextColor="#333"
+               BackgroundColor="White"
+               WidthRequest="300"
+               HeightRequest="45"/>
+        
+        <!-- Password Entry -->
+        <Entry Placeholder="Password"
+               IsPassword="True"
+               PlaceholderColor="#888"
+               TextColor="#333"
+               BackgroundColor="White"
+               WidthRequest="300"
+               HeightRequest="45"/>
+        
+        <!-- Login Button -->
+        <Button Text="Login"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="300"
+                HeightRequest="50"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnLoginClicked"/>
+        
+        <!-- Additional spacing for layout -->
+    </VerticalStackLayout>
+
+</ContentPage>

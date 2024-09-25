@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Exercise01.View.AddEmployee">
+
+
+    <ScrollView>
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+        <Entry Placeholder="First Name" x:Name="FirstNameEntry" TextChanged="OnNameChanged"/>
+        <Entry Placeholder="Last Name" x:Name="LastNameEntry" TextChanged="OnNameChanged"/>
+        <Label Text="Full Name:"/>
+        <Label x:Name="FullNameLabel" FontSize="18" TextColor="Black"/>
+        <Entry Placeholder="Municipality" x:Name="MunicipalityEntry"/>
+        <Entry Placeholder="Province" x:Name="ProvinceEntry"/>
+         <Label Text="Coordinates:" x:Name=" CoordinatesLabel2"/>
+
+            <Entry Placeholder="Position" x:Name="PositionEntry"/>
+        <Entry Placeholder="Department" x:Name="DepartmentEntry"/>
+
+        <Button Text="Take Employee Photo" Clicked="OnCapturePhotoClicked"/>
+        <Image x:Name="CaptureImage" HeightRequest="300" WidthRequest="300" Aspect="AspectFill"/>
+
+        <Button Text="Get Location" Clicked="OnGetLocationClicked"/>
+        <Label x:Name="LocationLabel" Text="Location will appear here"/>
+        <Label x:Name="AddressLabel" Text="Address will appear here"/>
+        <Label x:Name="CoordinatesLabel" Text="Coordinates will appear here"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

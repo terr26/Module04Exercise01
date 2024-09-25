@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module03Exercise01.View.OfflinePage"
+             Title="Offline"
+             BackgroundColor="#F5F5F5">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="15"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+
+        <!-- Offline Message -->
+        <Label Text="You are offline"
+               FontSize="32"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="#D600AA"
+               FontAttributes="Bold"/>
+
+        <!-- Retry Button -->
+        <Button Text="Retry Connection"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="300"
+                HeightRequest="50"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnRetryConnectionClicked"/>
+
+        <!-- Additional spacing for layout -->
+    </VerticalStackLayout>
+
+</ContentPage>
